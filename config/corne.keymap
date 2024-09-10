@@ -111,10 +111,10 @@
 
             bindings = <
    &mt LWIN RBKT   &kp Q   &kp W      &kp E            &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O    &kp P      &mt RWIN LBKT
- &mt LSHFT GRAVE   &kp A   &kp S      &kp D            &kp F      &kp G      &kp H      &kp J      &kp K      &kp L    &kp SEMI   &mt RSHFT SQT
-   &mt LCTRL BSLH  &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH   &mt RALT MINUS
+ &mt LCTRL GRAVE   &kp A   &kp S      &kp D            &kp F      &kp G      &kp H      &kp J      &kp K      &kp L    &kp SEMI   &mt RCTRL SQT
+   &mt LALT BSLH  &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH   &mt RALT MINUS
                                   //&lt 2 TAB  &mt LCTRL SPACE  &lt 1 RET      &lt 1 ESC  &mt RCTRL BSPC  &lt 2 DEL
-                                  &mt LWIN TAB  &lt 1 SPACE  &lt 2 RET      &lt 2 ESC  &lt 1 BSPC  &lt LWIN DEL  
+                                  &mt LWIN TAB  &mt LSHIFT SPACE  &lt 1 RET      &lt 2 ESC  &mt LSHIFT BSPC  &lt LWIN DEL  
             >;
         };
 
@@ -130,7 +130,7 @@
     &kp LSHFT  &kp N1   &kp N2 &kp N3   &kp N4   &kp N5      &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &mt RSHFT PIPE
  &kp LEFT_ALT  &kp N6   &kp N7 &kp N8   &kp N9   &kp N0      &kp UNDER  &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC   &kp RALT
                             //&lt 3 TAB   &trans   &trans      &trans     &trans    &lt 3 DEL
-                                &trans  &trans  &lt 3 RET    &lt 3 ESC  &trans    &trans
+                                &trans  &kp SPACE  &trans    &lt 3 ESC  &trans    &trans
             >;
         };
 
@@ -152,7 +152,7 @@
    &kp LSHFT         &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F11   &mt RSHFT KP_ENTER
    &kp LCTRL         &trans        &trans       &trans       &trans       &trans          &trans   &trans   &trans &trans    &kp F12   &kp RALT
                                                 //&trans  &trans  &lt 3 RET   &lt 3 ESC     &trans     &trans
-                                                &trans  &lt 3 SPACE &trans        &trans &lt 3 BSPC    &trans
+                                                &trans    &trans  &lt 3 RET   &trans  &trans    &trans
             >;
         };
 
