@@ -17,12 +17,12 @@
 
 &lt {
     quick_tap_ms = <200>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 
 &mt {
     quick_tap_ms = <200>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 
 / {
@@ -39,8 +39,8 @@
 
             bindings = <
    &mt LWIN RBKT   &kp Q   &kp W      &kp E            &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O    &kp P      &mt RWIN LBKT
- &mt LCTRL GRAVE   &kp A   &kp S      &kp D            &kp F      &kp G      &kp H      &kp J      &kp K      &kp L    &kp SEMI   &mt RCTRL SQT
-   &mt LALT EQUAL  &mt LSHIFT Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &mt LSHIFT FSLH   &mt RALT MINUS
+ &mt LCTRL GRAVE   &mt LSHIFT A   &kp S      &kp D            &kp F      &kp G      &kp H      &kp J      &kp K      &kp L    &mt LSHIFT SEMI   &mt RCTRL SQT
+   &mt LALT EQUAL  &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH   &mt RALT MINUS
                                   &mt LWIN TAB  &kp SPACE  &lt 1 RET      &lt 2 ESC  &mt LSHIFT BSPC  &lt 1 DEL  
             >;
         };
@@ -48,13 +48,13 @@
         lower_layer {
             // -----------------------------------------------------------------------------------------
             //|  LGUI  |  ^  |  1  |  2  |  3  |  $  |   |  &  |  [  |  ]  |  -  |  +  | RGUI/"\" |
-            //|  CTRL  | ___ |  4  |  5  |  6  |  0  |   |  !  |  (  |  )  |  =  |  >  | CTRL/"|" |
+            //|  CTRL  |  *  |  4  |  5  |  6  |  0  |   |  !  |  (  |  )  |  =  |  >  | CTRL/"|" |
             //|  LALT  | ___ |  7  |  8  |  9  |  %  |   |  @  |  {  |  }  |  #  |  <  |   RALT   |
             //                     | ___ | ___ | ADJ |   | ADJ | ___ | ___ |
 
             bindings = <
      &kp LGUI   &kp CARET   &kp N1  &kp N2   &kp N3   &kp DLLR          &kp AMPS   &kp LBKT   &kp RBKT   &kp MINUS   &kp PLUS   &mt RGUI BSLH
-     &kp LCTRL  &trans      &kp N4  &kp N5   &kp N6   &kp N0            &kp EXCL   &kp LPAR   &kp RPAR   &kp EQUAL   &kp GT     &mt LCTRL PIPE
+     &kp LCTRL  &kp STAR    &kp N4  &kp N5   &kp N6   &kp N0            &kp EXCL   &kp LPAR   &kp RPAR   &kp EQUAL   &kp GT     &mt LCTRL PIPE
 &mt LALT EQUAL  &trans      &kp N7  &kp N8   &kp N9   &kp PRCNT         &kp AT     &kp LBRC   &kp RBRC   &kp HASH    &kp LT     &kp RALT
             >;
         };
