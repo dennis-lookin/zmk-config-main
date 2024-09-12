@@ -44,10 +44,10 @@
             //                     | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-   &mt LWIN RBKT   &kp Q   &kp W      &kp E            &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O    &kp P      &mt LALT LBKT
+   &mt LWIN RBKT   &kp Q   &kp W      &kp E            &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O    &kp P      &mt LWIN LBKT
  &mt LCTRL GRAVE   &kp A   &kp S      &kp D            &kp F      &kp G      &kp H      &kp J      &kp K      &kp L    &kp SEMI   &mt RCTRL SQT
-   &mt LSHIFT EQUAL  &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH   &mt RSHIFT MINUS
-                                  &mt LWIN TAB  &kp SPACE  &lt 1 RET      &lt 2 ESC  &kp BSPC  &lt 1 DEL  
+   &mt LALT EQUAL  &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH   &kp MINUS
+                                  &mt LSHIFT TAB  &kp SPACE  &kp RET      &lt 2 ESC  &lt 1 BSPC  &kp DEL  
             >;
         };
 
@@ -83,7 +83,7 @@
    &mt LEFT_GUI CAPS    &kp F1       &kp F2       &kp F3         &kp F4       &kp F5          &kp F6     &kp F7     &kp F8   &kp F9      &kp F10   &mt RIGHT_GUI KP_NUMLOCK
    &kp LCTRL            &kp C_PREV   &kp C_NEXT   &kp C_VOL_DN   &kp C_VOL_UP &kp C_PP        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp F11   &mt LCTRL KP_ENTER
    &mt LALT EQUAL       &trans       &trans       &trans         &trans       &trans          &trans     &trans     &trans   &trans      &kp F12   &kp RALT
-                                                    &trans  &trans  &trans      &lt 3 ESC  &trans  &trans 
+                                                    &trans  &trans  &trans    &trans          &lt 3 ESC  &trans 
             >;
         };
 
