@@ -17,22 +17,18 @@
 
 &lt {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
     flavor = "balanced";
     tapping-term-ms = <200>;
     require-prior-idle-ms = <125>;
     quick-tap-ms = <200>;
-    bindings = <&kp>, <&kp>;
 };
 
 &mt {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
     flavor = "balanced";
     tapping-term-ms = <200>;
     require-prior-idle-ms = <125>;
     quick-tap-ms = <200>;
-    bindings = <&kp>, <&kp>;
 };
 
 / {
@@ -48,10 +44,10 @@
             //                     | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-   &mt LWIN RBKT   &kp Q   &kp W      &kp E            &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O    &kp P      &mt RWIN LBKT
+   &mt LWIN RBKT   &kp Q   &kp W      &kp E            &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O    &kp P      &mt LALT LBKT
  &mt LCTRL GRAVE   &kp A   &kp S      &kp D            &kp F      &kp G      &kp H      &kp J      &kp K      &kp L    &kp SEMI   &mt RCTRL SQT
-   &mt LALT EQUAL  &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH   &mt RALT MINUS
-                                  &mt LWIN TAB  &mt LSHIFT SPACE  &mt LSHIFT RET      &lt 2 ESC  &lt 1 BSPC  &lt 1 DEL  
+   &mt LSHIFT EQUAL  &kp Z   &kp X      &kp C            &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH   &mt RSHIFT MINUS
+                                  &mt LWIN TAB  &kp SPACE  &lt 1 RET      &lt 2 ESC  &kp BSPC  &lt 1 DEL  
             >;
         };
 
@@ -63,9 +59,9 @@
             //                     | ___ | ___ | ADJ |   | ADJ | ___ | ___ |
 
             bindings = <
-     &kp LGUI   &kp CARET   &kp N1  &kp N2   &kp N3   &kp DLLR          &kp AMPS   &kp LBKT   &kp RBKT   &kp MINUS   &kp PLUS   &mt RGUI BSLH
+     &kp LGUI   &kp CARET   &kp N1  &kp N2   &kp N3   &kp DLLR          &kp AMPS   &kp LBKT   &kp RBKT   &kp MINUS   &kp PLUS   &mt LALT BSLH
      &kp LCTRL  &kp STAR    &kp N4  &kp N5   &kp N6   &kp N0            &kp EXCL   &kp LPAR   &kp RPAR   &kp EQUAL   &kp GT     &mt LCTRL PIPE
-&mt LALT EQUAL  &trans      &kp N7  &kp N8   &kp N9   &kp PRCNT         &kp AT     &kp LBRC   &kp RBRC   &kp HASH    &kp LT     &kp RALT
+&mt LSHIFT      &trans      &kp N7  &kp N8   &kp N9   &kp PRCNT         &kp AT     &kp LBRC   &kp RBRC   &kp HASH    &kp LT     &kp RSHIFT
             >;
         };
 
