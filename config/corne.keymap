@@ -17,28 +17,18 @@
 
 &lt {
     compatible = "zmk,behavior-hold-tap";
-    //flavor = "hold-preferred";
-    //tapping-term-ms = <200>;
-    //require-prior-idle-ms = <125>;
-    //quick-tap-ms = <200>;
-
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;                // repeat on tap-into-hold
-    require-prior-idle-ms = <150>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <190>;
+    quick-tap-ms = <150>;
 };
 
 &mt {
     compatible = "zmk,behavior-hold-tap";
-    //flavor = "hold-preferred";
-    //tapping-term-ms = <200>;
-    //require-prior-idle-ms = <125>;
-    //quick-tap-ms = <200>;
-
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;                // repeat on tap-into-hold
-    require-prior-idle-ms = <150>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <190>;
+    quick-tap-ms = <150>;
 };
 
 / {
@@ -92,8 +82,8 @@
             bindings = <
    &mt LEFT_GUI CAPS    &kp F1       &kp F2       &kp F3         &kp F4       &kp F5          &kp F6     &kp F7     &kp F8   &kp F9      &kp F10   &mt RIGHT_GUI KP_NUMLOCK
    &kp LCTRL            &kp C_PREV   &kp C_NEXT   &kp C_VOL_DN   &kp C_VOL_UP &kp C_PP        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp F11   &mt LCTRL KP_ENTER
-   &mt LALT EQUAL       &trans       &trans       &trans         &trans       &trans          &trans     &trans     &trans   &trans      &kp F12   &kp RALT
-                                                    &trans  &trans  &trans                &trans &lt 3 BSPC  &trans
+   &mt LALT EQUAL       &trans       &trans       &trans         &trans       &trans          &kp HOME     &kp END     &trans   &trans      &kp F12   &kp RALT
+                                                    &trans  &trans  &trans                &lt 3 ESC &trans   &trans
             >;
         };
 
