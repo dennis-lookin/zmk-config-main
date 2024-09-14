@@ -17,18 +17,28 @@
 
 &lt {
     compatible = "zmk,behavior-hold-tap";
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    require-prior-idle-ms = <125>;
-    quick-tap-ms = <200>;
+    //flavor = "hold-preferred";
+    //tapping-term-ms = <200>;
+    //require-prior-idle-ms = <125>;
+    //quick-tap-ms = <200>;
+
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    require-prior-idle-ms = <150>;
 };
 
 &mt {
     compatible = "zmk,behavior-hold-tap";
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    require-prior-idle-ms = <125>;
-    quick-tap-ms = <200>;
+    //flavor = "hold-preferred";
+    //tapping-term-ms = <200>;
+    //require-prior-idle-ms = <125>;
+    //quick-tap-ms = <200>;
+
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    require-prior-idle-ms = <150>;
 };
 
 / {
